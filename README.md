@@ -2,7 +2,10 @@
 
 Code used in ``Cluster-Based Bandits: Fast Cold-Start for Recommender System New Users'', Proc SIGIR 2021
 
-Implemented in matlab rather than python.  To run first clone the repository, then navigate to local folder containing the files and:
+
+[Paper pdf](sigir16.pdf) and [Video of SIGIR'21 presentation](sigir2021.mp4)
+
+Code is implemented in matlab rather than python.  To run first clone the repository, then navigate to local folder containing the files and:
 
 1. unzip netflix_full_8nyms.zip
 2. open matlab
