@@ -1,6 +1,5 @@
-# SIGIR_clusterbasedbandit
 
-Code used in ``Cluster-Based Bandits: Fast Cold-Start for Recommender System New Users'', Proc SIGIR 2021
+#``Cluster-Based Bandits: Fast Cold-Start for Recommender System New Users'', Proc SIGIR 2021
 
 
 [Paper pdf](sigir16.pdf?raw=true) and [Video of SIGIR'21 presentation](https://github.com/doug-leith/SIGIR_clusterbasedbandit/blob/main/sigir2021.mp4?raw=true)
