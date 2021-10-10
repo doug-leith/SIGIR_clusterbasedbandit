@@ -3,7 +3,7 @@
 Code used in ``Cluster-Based Bandits: Fast Cold-Start for Recommender System New Users'', Proc SIGIR 2021
 
 
-[Paper pdf](sigir16.pdf) and [Video of SIGIR'21 presentation](https://github.com/doug-leith/SIGIR_clusterbasedbandit/blob/main/sigir2021.mp4)
+[Paper pdf](sigir16.pdf?raw=true) and [Video of SIGIR'21 presentation](https://github.com/doug-leith/SIGIR_clusterbasedbandit/blob/main/sigir2021.mp4?raw=true)
 
 Code is implemented in matlab rather than python.  To run first clone the repository, then navigate to local folder containing the files and:
 
