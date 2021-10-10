@@ -1,0 +1,72 @@
+Retrieving R from files... Got users... Got ratings... Got movies... Got R.
+Removing columns...Removing rows...R Density: 0.56338, ratings: 4136360, users: 73421, items: 100, features: 20, nyms: 1
+Splitting dataset with test_ratio=0.1
+Removed 0 rows from test_R due to too few training samples.
+Training Density: 0.50704, ratings: 3722724, users: 73421, items: 100, features: 20, nyms: 1
+Pre-processing time: 0.707
+
+Running weighted alternating least squares? True
+
+[<pyopencl.Platform 'NVIDIA CUDA' at 0x2a08a60>]
+[<pyopencl.Device 'GeForce RTX 2080 Ti' on 'NVIDIA CUDA' at 0x27f29e0>]
+Itt/Users/Chng		Timings (Rtilde, P, Alsqr V)	Iter	Delta
+ 0 /      10 /      10	  0.000 /   0.001 /   0.335	5	3.27e-02
+ 0 /     100 /     100	  0.000 /   0.000 /   0.317	5	3.35e-03
+ 0 /    1000 /    1000	  0.000 /   0.000 /   0.085	1	1.54e-04
+ 0 /   10000 /   10000	  0.000 /   0.003 /   0.099	1	1.57e-06
+ 0 /   73421 /   73421	  0.000 /   0.047 /   0.128	1	2.91e-08
+--- Nym distribution (MSE/rating): 73421 (25.478), Total error: 25.478.
+Main-loop time: 1.436
+
+--> Splitting 1 nym(s) (distances: 1), increasing to 2. 73421 (100%) users affected. (Rtilde density: 1.000)
+ 0 /      20 /       7	  0.000 /   0.002 /   0.413	5	8.82e-02
+ 0 /     200 /      42	  0.000 /   0.001 /   0.307	5	2.68e-01
+ 0 /    2000 /     459	  0.000 /   0.002 /   0.319	5	1.92e-01
+ 0 /   20000 /    4683	  0.001 /   0.008 /   0.389	5	2.13e-02
+ 0 /   73421 /   18377	  0.004 /   0.050 /   0.126	1	1.45e-04
+ 1 /   73421 /    4760	  0.009 /   0.037 /   0.135	1	9.52e-05
+ 2 /   73421 /    3483	  0.006 /   0.026 /   0.126	1	7.50e-05
+ 3 /   73421 /    2496	  0.006 /   0.026 /   0.125	1	6.46e-05
+ 4 /   73421 /    1759	  0.020 /   0.045 /   0.129	1	5.91e-05
+ 5 /   73421 /    1251	  0.006 /   0.026 /   0.111	1	5.55e-05
+ 6 /   73421 /     912	  0.021 /   0.054 /   0.137	1	5.37e-05
+ 7 /   73421 /     623	  0.006 /   0.056 /   0.128	1	5.24e-05
+--- Nym distribution (MSE/rating): 39766 (19.278), 33655 (23.260), Total error: 21.025.
+Main-loop time: 4.019
+
+--> Splitting 2 nym(s) (distances: 3, 3), increasing to 4. 73421 (100%) users affected. (Rtilde density: 1.000)
+ 0 /      40 /      20	  0.000 /   0.001 /   0.336	5	3.08e-01
+ 0 /     400 /      64	  0.000 /   0.002 /   0.340	5	2.30e-01
+ 0 /    4000 /     672	  0.001 /   0.003 /   0.361	5	8.79e-02
+ 0 /   40000 /   11869	  0.002 /   0.015 /   0.325	5	2.34e-02
+ 0 /   73421 /   25076	  0.002 /   0.013 /   0.088	1	7.39e-04
+ 1 /   73421 /   10913	  0.009 /   0.036 /   0.338	5	7.70e-02
+ 2 /   73421 /    5622	  0.033 /   0.067 /   0.322	5	1.02e-01
+ 3 /   73421 /    3216	  0.045 /   0.069 /   0.350	5	9.18e-02
+ 4 /   73421 /    2133	  0.043 /   0.073 /   0.356	5	7.72e-02
+ 5 /   73421 /    1503	  0.025 /   0.071 /   0.334	5	6.25e-02
+ 6 /   73421 /    1129	  0.034 /   0.072 /   0.126	1	9.89e-04
+ 7 /   73421 /     770	  0.006 /   0.038 /   0.123	1	9.06e-04
+ 8 /   73421 /     526	  0.010 /   0.043 /   0.141	1	8.22e-04
+--- Nym distribution (MSE/rating): 18738 (16.739), 14652 (22.812), 18323 (20.198), 21708 (18.273), Total error: 19.148.
+Main-loop time: 5.877
+
+Doubling stopped. Running last pass.
+ 0 /   73421 /     378	  0.006 /   0.023 /   0.189	1	7.72e-04
+ 1 /   73421 /     285	  0.006 /   0.053 /   0.121	1	7.23e-04
+ 2 /   73421 /     178	  0.015 /   0.055 /   0.136	1	6.80e-04
+ 3 /   73421 /     134	  0.006 /   0.027 /   0.134	1	6.35e-04
+ 4 /   73421 /      92	  0.026 /   0.057 /   0.120	1	6.08e-04
+ 5 /   73421 /      61	  0.024 /   0.068 /   0.123	1	5.82e-04
+ 6 /   73421 /      47	  0.018 /   0.051 /   0.137	1	5.51e-04
+ 7 /   73421 /      36	  0.006 /   0.030 /   0.135	1	5.29e-04
+ 8 /   73421 /      58	  0.006 /   0.035 /   0.122	1	5.08e-04
+ 9 /   73421 /      56	  0.006 /   0.027 /   0.127	1	4.91e-04
+--- Nym distribution (MSE/rating): 18686 (16.725), 14496 (22.800), 18436 (20.123), 21803 (18.368), Total error: 19.147.
+Main-loop time: 3.050
+
+Maximum number of nyms of 4 reached without reaching error tolerance (0.010).
+Total time taken: 14.635
+
+Factorisation RMSE: 4.375684
+Prediction RMSE: 4.470718
